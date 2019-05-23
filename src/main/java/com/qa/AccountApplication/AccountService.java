@@ -14,5 +14,4 @@ public class AccountService {
 	{
 		return this.json.toJSON(this.repo.getAccount(number));
 	}
-
 }
