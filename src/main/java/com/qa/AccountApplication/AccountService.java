@@ -1,7 +1,5 @@
 package com.qa.AccountApplication;
 
-import java.util.ArrayList;
-
 import javax.inject.Inject;
 
 public class AccountService {
@@ -24,4 +22,20 @@ public class AccountService {
 				.forEach(x -> allAccountObjectsAsJson = allAccountObjectsAsJson + this.json.toJSON(x) + "\n");
 		return allAccountObjectsAsJson.trim();
 	}
+
+	public String createAnAccount(String accountJSONFormat) {
+
+		return this.repo.createAnAccount(accountJSONFormat);
+	}
+	
+	public String updateAnAccount(String accountJSONFormat) {
+
+		return this.repo.updateAnAccount(accountJSONFormat);
+	}
+	
+	public String deleteAnAccount(int number) {
+
+		return this.repo.deleteAnAccount(number);
+	}
+
 }
