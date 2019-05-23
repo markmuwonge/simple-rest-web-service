@@ -7,11 +7,11 @@ import javax.persistence.Id;
 
 @Entity
 public class Account {
-		
-	@Id 
+
+	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int accountNumber;	
-	
+	private int accountNumber;
+
 	private String firstName;
 	private String lastName;
 }

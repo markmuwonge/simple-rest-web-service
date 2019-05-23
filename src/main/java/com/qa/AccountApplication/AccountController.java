@@ -5,8 +5,8 @@ import javax.ws.rs.Path;
 
 @Path("/account")
 public class AccountController {
-	
-	@Inject 
+
+	@Inject
 	private Account account;
 
 }

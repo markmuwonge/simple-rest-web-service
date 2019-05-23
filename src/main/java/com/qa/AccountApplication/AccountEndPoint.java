@@ -15,8 +15,13 @@ public class AccountEndPoint {
 	@Path("/{id}")
 	public String getAccount(@PathParam("id") Integer id) {
 		return service.getAccount(id);
-		
-		
+	}
+
+	@GET
+	@Path("/getAllAccounts")
+	public String getAllAccounts() {
+
+		return service.getAllAccounts();
 	}
 
 }
